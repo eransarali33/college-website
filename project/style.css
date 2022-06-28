@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Balsamiq+Sans:ital@1&family=Lato:wght@100&display=swap");
+:root {
+  --main-bg-color: #2874f0;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background: var(--main-bg-color);
+  font-family: "Baloo Bhai 2", cursive;
+}
+nav {
+  display: flex;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 0 23px;
+}
+.logo img {
+  width: 90px;
+}
+nav ul {
+  height: 58px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 23px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  font-weight: bolder;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  width: 235px;
+  height: 27px;
+  border-radius: 10px;
+  margin: 0 58px;
+}
+.btn {
+  transform: translate(-4vw);
+  background-color: #2874f0;
+  color: white;
+  border-radius: 13px;
+  padding: 5px;
+  cursor: pointer;
+}
+.slider {
+  width: 60vw;
+  margin: 12px auto;
+  /* border: 3px solid green; */
+}
+.slider img {
+  /* border: 3px solid yellow; */
+  margin: 0 10px;
+}
+.container {
+  min-height: calc(100vh - 78.8281px - 58px);
+  /* border: 7px solid rgb(133, 38, 114); */
+  display: inline-flex;
+  background-color: aqua;
+  width: 100vw;
+}
+.card {
+  /* border: 3px solid red; */
+  width: 19.5vw;
+  display: inline-block;
+  flex-direction: row;
+  margin: 0 auto;
+  background-color: white;
+}
+.card h2 {
+  /* border: 3px solid black; */
+  display: flex;
+  justify-content: center;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.card-item {
+  /* border: 3px solid yellowgreen; */
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+}
+.lines {
+  /* border: 3px solid aqua; */
+  font-family: "Baloo Bhai 2", cursive;
+  text-align: center;
+}
+@keyframes animate1 {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 9vw;
+    }
+    100%{
+        width: 18vw;
+    }  
+  } 
+    @keyframes animate2 {
+      0%{
+         width: 9vw;
+         height: 9vh;
+      }
+      /* 50%{
+        width: 9vw;
+        height: 9vh;
+      } */
+      100%{
+        width: 18vw;
+        height: 18vh;
+      } 
+}
+.lanimate{
+    /* border: 3px solid grey; */
+    width: 18vw;    
+}
+.lanimate img{
+    animation:  animate1 2s infinite alternate-reverse ;
+    height: 160px;
+    width: 160px;
+    margin: 150px 0;
+    color: aqua;   
+}
+.ranimate{
+  width: 18vw; 
+}
+.ranimate img{
+  animation: animate2 1s infinite alternate-reverse ;
+  height: 260px;
+  width: 160px;
+  margin: 190px 0;
+  border-radius: 130px;
+}
+/* h2{
+  text-align: center;
+} */
+footer {
+  height: 12vh;
+  background: var(--main-bg-color);
+  color: white;
+  font-family: "Baloo Bhai 2", cursive;
+}
